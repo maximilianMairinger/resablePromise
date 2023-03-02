@@ -4,7 +4,6 @@
   "description": "Simple promise subclass, allowing for resolvement outside of callback (as property).",
   "main": "./app/dist/esm/resablePromise.mjs",
   "types": "./app/dist/esm/resablePromise.d.ts",
-  "bin": "./app/dist/esm/cli/resablePromise-cli.js",
   "exports": {
     "node": {
       "import": "./app/dist/esm/resablePromise.mjs",
