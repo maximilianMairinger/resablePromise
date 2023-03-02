@@ -2,8 +2,6 @@
 
 Simple promise subclass, allowing for resolvement outside of callback (as property).
 
-> Please note that Resable promise is currently under development and not yet suited for production
-
 ## Installation
 
 ```shell
@@ -12,13 +10,37 @@ Simple promise subclass, allowing for resolvement outside of callback (as proper
 
 ## Usage
 
-
+Do this:
 
 ```ts
-import resablePromise from "resable-promise"
+import ResablePromise from "resable-promise"
 
-resablePromise()
+const prom = new ResablePromise()
+// later...
+prom.res()
 ```
+
+So you dont have to do this:
+
+```ts
+let promRes
+const prom = new Promise(res => promRes = res)
+// later ...
+promRes()
+```
+
+Only convinience, as I see myself doing this a lot. And this provides type safety without effort.
+
+### On Settled
+
+Is a promise that resolves when the base promise is ether resolved or rejected.
+
+```ts
+const prom = new ResablePromise()
+
+prom.settled.then(() => console.log("settled"))
+```
+
 
 ## Contribute
 
