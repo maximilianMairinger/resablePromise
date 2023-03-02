@@ -1,4 +1,4 @@
-import resablePromise from "../../app/src/resablePromise"
+import ResablePromise from "../../app/src/resablePromise"
 //const testElem = document.querySelector("#test")
 
-resablePromise()
+new ResablePromise().settled
