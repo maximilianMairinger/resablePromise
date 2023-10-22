@@ -1,3 +1,8 @@
+# DEPRECATED
+
+Use analog implementation in [more-proms](https://npmjs.com/package/more-proms) instead.
+
+
 # Resable promise
 
 Simple promise subclass, allowing for resolvement outside of callback (as property).
