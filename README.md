@@ -5,7 +5,7 @@ Use analog implementation in [more-proms](https://npmjs.com/package/more-proms) 
 
 # Resable promise
 
-Simple promise subclass, allowing for resolvement outside of callback (as property).
+Simple promise subclass, allowing for resolvent outside of callback (as property).
 
 ## Installation
 
@@ -34,7 +34,7 @@ const prom = new Promise(res => promRes = res)
 promRes()
 ```
 
-Only convinience, as I see myself doing this a lot. And this provides type safety without effort.
+Only convenience, as I see myself doing this a lot. And this provides type safety without effort.
 
 ### On Settled
 
